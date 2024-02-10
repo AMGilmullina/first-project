@@ -207,6 +207,9 @@ body {
     font-family: 'Oswald', sans-serif;
     margin-left: 15px;
 }
+button i.fa-envelope {
+    font-size: 18px;
+}
 .button:hover {
     color: var(--accent);
     -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
