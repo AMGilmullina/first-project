@@ -15,11 +15,19 @@
         <div class="container">
             <div class="header__navigation">
                 <img class="logo" src="img/logo.svg" alt="Логотип компании">
-                <button class="burger">
+                <button class="burger" id="burger">
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
                 </button>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#content" class="menu__link">Проекты</a></li>
+                        <li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
+                        <li class="menu__item"><a href="#faq" class="menu__link">FAQ</a></li>
+                        <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="header__text">
                 <h1 class="header__text-title">РЕАЛИЗУЕМ КРУПНЕЙШИЕ ПРОЕКТЫ В РОССИИ</h1>
@@ -27,7 +35,7 @@
             </div>
         </div>
     </header>
-    <section class="info">
+    <section class="info" id="info">
         <div class="features">
             <div class="container">
                 <ul class="features__list">
@@ -55,7 +63,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="content">
+            <div class="content" id="content">
                 <h3 class="content__title main-title">НАШИ САМЫЕ БОЛЬШИЕ ПРОЕКТЫ</h3>
                 <div class="content__box">
                     <div class="content__box-item">
@@ -90,7 +98,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">              
             <h3 class="services__title main-title">ЧЕМ МЫ ЗАНИМАЕМСЯ?</h3>
             <div class="services__box">
@@ -149,7 +157,7 @@
             </div>
         </div>
     </section>
-    <section class="faq">
+    <section class="faq" id="faq">
         <div class="container">
             <h3 class="main-title faq-title">ОТВЕТЫ НА ВОПРОСЫ</h3>
             <div class="faq__box">
@@ -232,7 +240,7 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <h3 class="contacts__title main-title">КОНТАКТЫ</h3>
             <div class="contacts__grid">
@@ -272,5 +280,6 @@
             </div>
         </div>
     </footer>
+    <script defer src="js/main.js"></script>
 </body>
 </html>

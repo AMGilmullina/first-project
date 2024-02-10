@@ -1,6 +1,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -45,6 +46,33 @@ body {
     width: 20px;
     display: block;
     margin-bottom: 5px;
+}
+.menu {
+    width: 300px;
+    min-height: 100%;
+    position: absolute;
+    left: -300px;
+    top: 0;
+    background-color: var(--white);
+    padding: 100px 20px 20px 20px;
+    transition: transform 0.5s;
+}
+.menu__list {
+    display: block;
+}
+.menu__item {
+    list-style: none;
+    margin-left: 40px;
+}
+.menu__link {
+    color: var(--dark);
+    font-size: 24px;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+.header.open .menu {
+    transform: translateX(100%);
 }
 .header {
     min-height: 740px;
@@ -522,6 +550,10 @@ details:hover {
     }
 }
 @media (max-width: 400px) {
+    .menu {
+        width: 250px;
+        left: -250px;
+    }
     .faq__box-title {
         font-size: 20px;
     }
