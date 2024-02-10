@@ -235,6 +235,9 @@ body {
     margin: 20px auto 0;
     max-width: 172px;
 }  
+.services__item-img {
+    color: var(--accent);
+}
 
 /* ---------- PORTFOLIO ---------- */
 
@@ -384,10 +387,7 @@ details:hover {
     color: var(--black);
     text-decoration: none;
 }
-.contacts__grid-item:last-child .contacts__grid-text {
-    color: var(--accent);
-}
-.services__item-img {
+.link-to-click:hover {
     color: var(--accent);
 }
 
