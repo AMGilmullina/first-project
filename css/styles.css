@@ -24,6 +24,7 @@ body {
     --bg-gray: #F7F7F7;
 }
 
+/* ---------- HEADER ---------- */
 .header__navigation {
     display: flex;
     justify-content: space-between;
@@ -189,13 +190,13 @@ body {
     letter-spacing: 0.5px;
     color: var(--white);
 }
-.request__button {
+.button {
+    width: 175px;
     margin-top: 49px;
     display: flex;
-    background-color: var(--white);
+    justify-content: space-between;
+    align-items: center;
     padding: 14px 30px;
-}
-.btn {
     background-color: var(--white);
     color: var(--black);
     font-weight: 500;
@@ -205,6 +206,12 @@ body {
     border: none;
     font-family: 'Oswald', sans-serif;
     margin-left: 15px;
+}
+.button:hover {
+    color: var(--accent);
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+        -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
 }
 
 /* ---------- SERVICES ---------- */
